@@ -1,10 +1,6 @@
 # teleops
 Talk to your servers in real time! TeleOps facilitates shell and management console access through instant messaging infrastructure.
 
-TeleOps
-
-WRAP OPEN IM API (e.g. telegram et al)  with python server infra. for notification and response to ops alrets in your palm.
-
 Relevant links: 
 
 * http://flask.pocoo.org/ (https://github.com/tgalal/yowsup)
@@ -15,9 +11,7 @@ Relevant links:
 * telegram: https://pypi.python.org/pypi/python-telegram-bot
 * hangouts: https://github.com/hangoutsbot/hangoutsbot
 
-Post: When on call, I'd always wanted to be able to get critical notifications and act upon them via Instant Messaging.
-Owner: Sivan 
-Wish to join: Ishay Michal 
+
 Proposed Implementation Plan: 
 Using Navistore as reference, we could create REST end points for accepting incoming notifications from monitoring solutions  (like Sensu et al and statsd)  such that they will be delivered to an on call engineer. Upon receipt, an engineer can respond to critical alerts with text that actually denotes commands (be it investigative, or corrective) , to be executed at the alerting instance, every alerts/response duo should be recorded and maintained as a scenario accessible to the whole on call rotation team. This allows for every on call engineer to continue each other's work and have a log of actions for cases when problem that has been deemed 'solved' is re-experienced.
 Such case documentation would enable better knowledge flow based on events happening through arbitrary time frame in the on-duty engineering life cycle.
