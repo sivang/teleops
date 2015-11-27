@@ -34,4 +34,5 @@ Hackathon Aftermath:
 * Perhaps alternatively or in combination use pyzmq to make command execution even more robust allowing orchestration of multiple commands per user, employing worker process model isolating failures to childs making parent/controller process virtually bullet proof within the limitation of an affected system (e.g. severe memory shortage would render even such architecture DOS'd)
 * Whenever embarking on a new project idea, always make sure you've exhausted search for existing building blocks that can be reused or are completely unsuitable before coding it yourself, to avoid NIH. Consider https://www.duosecurity.com/product/methods/duo-mobile for 2 factor authentication (thanks to Shahar Mintz for bringing this to my attention).
 
+By Sivan Greenberg, Ishay Peled and Michal Kelner Mishali.
 
